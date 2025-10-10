@@ -10,7 +10,7 @@ const funFacts: string[] = [
   "I like C#",
   "I have been coding for 5 years",
   "I love metal music 🎶",
-  "I despise php and java",
+  "I don't like php and java",
   "I got two birds called Lalo and Nina 🦅",
   "I'm in my third year of my study",
   "I'm currently learning WEM and Data modeling"
