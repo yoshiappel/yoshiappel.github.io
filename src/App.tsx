@@ -1,48 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import React, { useState } from 'react';
+
 import githublogo from './assets/githublogo.svg'
 import linkedinlogo from './assets/linkedinlogo.svg'
 import maillogo from './assets/maillogo.svg'
+
 import './App.css'
-import React, { useState, useEffect } from 'react';
+
 import Popup from './Popup';
 import Header from './Header'
 import About from './About.tsx'
-
-function Typing() {
-  const text = "a software developer studying at Firda, Friesland";
-  const [displayed, setDisplayed] = useState("");
-  const [index, setIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-
-  const typingSpeed = 80;
-  const deletingSpeed = 50;
-  const pauseTime = 2000; 
-
-  useEffect(() => {
-    var timeout: number | undefined;
-
-    if (!isDeleting && index < text.length) {
-      timeout = setTimeout(() => setIndex(index + 1), typingSpeed);
-    } else if (!isDeleting && index === text.length) {
-      timeout = setTimeout(() => setIsDeleting(true), pauseTime);
-    } else if (isDeleting && index > 0) {
-      timeout = setTimeout(() => setIndex(index - 1), deletingSpeed);
-    } else if (isDeleting && index === 0) {
-      setIsDeleting(false);
-    }
-
-    setDisplayed(text.slice(0, index));
-
-    return () => clearTimeout(timeout);
-  }, [index, isDeleting, text]);
-
-  return (
-    <p style={{ textDecoration: "none" }}>
-      {displayed}
-    </p>
-  );
-}
-
+import Typing from './intro.tsx'
 
 const funFacts: string[] = [
   "I play the guitar 🎸",
@@ -75,7 +43,7 @@ const MainPage: React.FC = () => {
       </section>
       <h1 className='title'>hey, I'm Pieter</h1>
       <p className='small'>(i like c#)</p>
-      <div id='current'><Typing></Typing></div>
+      <div id='intro'><Typing></Typing></div>
       <div className="card">
         <p>currently interning at Maarsingh en van Steijn</p>
         <p>interested in game design and UI/UX</p>

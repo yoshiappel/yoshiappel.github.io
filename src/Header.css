@@ -5,7 +5,6 @@
     position: fixed;
     display: flex;
     justify-content: center;
-    gap: 3%;  
 }
 
 .blink {
@@ -36,11 +35,15 @@ a:hover {
 }
 
 .navbtn {
+    margin: 0 1%;
+    padding: 0 1%;
     color: white;
     letter-spacing: .12em;
 }
 
 .navbtn:hover {
-    color: rgb(180, 180, 180);
-    border-bottom: grey 1px solid;
+    padding: 1%;
+    background-color: rgba(154, 154, 154, 0.32);
+    color: rgb(255, 255, 255);
+    border-bottom: grey 2px solid;
 }

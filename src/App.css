@@ -9,7 +9,7 @@ section {
   margin-bottom: 30%;
 }
 
-#current {
+#intro {
   min-height: 5vh;
 }
 
@@ -33,18 +33,20 @@ section {
 }
 
 .small {
-  display: none;
-  margin-top: 0;
-  margin-bottom: 2vh;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
   font-size: xx-small;
+  transition: opacity 0.5s linear;
 }
 
 .title {
   margin: 0;
+  padding: 0;
 }
 
 .title:hover + .small {
-  display: block;
+  opacity: 1;
 }
 
 .card {
