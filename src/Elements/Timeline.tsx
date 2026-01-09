@@ -1,4 +1,30 @@
 import "../css/Timeline.css"
+import { useState } from 'react';
+import '../css/toggle.css';
+
+import Portfolio from "../assets/POP/Portfolio.pdf"
+import OOP from "../assets/POP/OOP.pdf"
+
+function Toggle() {
+    const [open, setOpen] = useState(false);
+
+    return (
+        <div>
+        <button
+            className="toggle-btn"
+            onClick={() => setOpen(!open)}
+            aria-expanded={open}
+        >
+            {open ? 'Close' : 'Open'}
+        </button>
+
+        <div className={`content ${open ? 'open' : ''}`}>
+            <a className="link" href={OOP}>OOP</a>
+            <a className="link" href={Portfolio} download={Portfolio}>Portfolio</a>
+        </div>
+        </div>
+    );
+}
 
 export default function Timeline() {
     return (
@@ -28,7 +54,7 @@ export default function Timeline() {
                 </div>
             </div>
         </div>
-        <a className="link" href="https://drive.google.com/drive/folders/1oE0NPyIx_CrycF2V3F6KTTr_1YhhC7Nh?usp=sharing">proof of participations</a>
+        <Toggle></Toggle>
         </>
     );
 }

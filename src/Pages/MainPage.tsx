@@ -3,13 +3,16 @@ import Typing from '../Elements/intro.tsx';
 import Popup from '../Elements/Popup.tsx';
 
 const funFacts: string[] = [
-    "I play the guitar 🎸",
+    "I like to play the guitar",
     "I like C#",
-    "I have been coding for 5 years",
-    "I love metal music 🎶",
-    "I got two birds called Lalo and Nina 🦅",
+    "I'm working on a Saas with my friends",
+    "I love symphonic metal music",
+    "I got two lovebirds birds called Lalo and Nina",
     "I'm in my third year of my study",
-    "I'm currently learning WEM and Data modeling"
+    "I'm currently learning WEM and Data modeling",
+    "My main guitar is the Schecter Omen 6",
+    "I like birds, like a lot",
+    "I like to stay far away from PHP"
 ];
 
 const getRandomFact = () => {
@@ -40,7 +43,7 @@ const MainPage: React.FC = () => {
             </p>
 
             <Popup visible={popupVisible} onClose={() => setPopupVisible(false)}>
-                <h2>👀 fun fact about me</h2>
+                <h2>fun fact about me</h2>
                 <p>{randomFact}</p>
             </Popup>
             </div>

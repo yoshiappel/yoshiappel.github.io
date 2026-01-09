@@ -70,4 +70,5 @@ button:focus-visible {
 .link {
   color: #a0a0a0;
   text-decoration: underline;
-}
+  transition: color .5s linear
+} 

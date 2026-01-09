@@ -1,0 +1,25 @@
+.toggle-btn {
+    padding: 10px 18px;
+    border: none;
+    background: #474747;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.content.open {
+    max-height: 200px;
+    opacity: 1;
+}
