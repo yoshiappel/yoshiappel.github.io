@@ -1,6 +1,7 @@
 import "../css/Timeline.css"
 import { useState } from 'react';
-import '../css/toggle.css';
+
+import '../css/Toggle.css';
 
 import Portfolio from "../assets/POP/Portfolio.pdf"
 import OOP from "../assets/POP/OOP.pdf"
