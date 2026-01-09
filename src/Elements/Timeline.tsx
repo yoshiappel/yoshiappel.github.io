@@ -16,7 +16,7 @@ function Toggle() {
             onClick={() => setOpen(!open)}
             aria-expanded={open}
         >
-            {open ? 'Close' : 'Open'}
+            {open ? 'Close' : 'Proof Of Participations'}
         </button>
 
         <div className={`content ${open ? 'open' : ''}`}>
