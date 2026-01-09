@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import "./Popup.css"
+import "../css/Popup.css"
 
 interface PopupProps {
     visible: boolean;

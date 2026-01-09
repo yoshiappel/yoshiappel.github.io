@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import "./Intro.css"
+import "../css/Intro.css"
 
 export default function Typing() {
     const text = "a software developer studying at Firda, Friesland";

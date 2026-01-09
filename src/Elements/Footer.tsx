@@ -1,10 +1,10 @@
-import githublogo from './assets/githublogo.svg'
-import linkedinlogo from './assets/linkedinlogo.svg'
-import maillogo from './assets/maillogo.svg'
+import githublogo from '../assets/githublogo.svg'
+import linkedinlogo from '../assets/linkedinlogo.svg'
+import maillogo from '../assets/maillogo.svg'
 
-import "./Contact.css"
+import "../css/Footer.css"
 
-export default function Contact() {
+export default function Footer() {
     return (
         <>
         <section className='contact'>
@@ -21,6 +21,9 @@ export default function Contact() {
                 </a>
             </div> 
         </section>
+        <p className="footer">
+            developed by <a className='ghlink' href='https://github.com/yoshiappel'>https://github.com/yoshiappel</a> ©{new Date().getFullYear()}
+        </p>
         </>
     );
 }

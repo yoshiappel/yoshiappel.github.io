@@ -1,0 +1,13 @@
+.footer {
+    margin-top: 20%;
+    color: #888;
+}
+
+.ghlink {
+    color: #888;
+    transition: color .5s linear;
+}
+
+.contact {
+    margin-top: 10%;
+}
