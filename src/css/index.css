@@ -72,3 +72,8 @@ button:focus-visible {
   text-decoration: underline;
   transition: color .5s linear
 } 
+
+.qt-link {
+  color: #37ae3c;
+  transition: color .5s linear  
+}

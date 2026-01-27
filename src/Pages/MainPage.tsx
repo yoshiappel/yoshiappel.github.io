@@ -35,7 +35,7 @@ const MainPage: React.FC = () => {
         <p className='small'>(i like c#)</p>
         <div id='intro'><Typing></Typing></div>
         <div className="card">
-            <p>currently interning at Maarsingh en van Steijn</p>
+            <p>currently working on <a className='qt-link' href="https://quiztocht.com/">Quiztocht</a></p>
             <p>interested in game design and UI/UX</p>
             <div>
             <p className="random-fact" onClick={handleOpenPopup}>
